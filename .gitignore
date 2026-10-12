@@ -1,12 +1,12 @@
+.venv/
+venv/
 __pycache__/
 *.pyc
 .env
-.venv/
-venv/
 *.joblib
-data/processed/*.csv
-!data/processed/.gitkeep
+catboost_info/
+models/
+data/processed/
 .streamlit/
 .pytest_cache/
-*.egg-info/
 .DS_Store

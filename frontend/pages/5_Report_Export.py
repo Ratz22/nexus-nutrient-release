@@ -1,0 +1,100 @@
+from datetime import datetime
+import os
+
+import httpx
+import streamlit as st
+from service_check import require_backend
+from report_pdf import NUTRIENT_NAMES, build_pdf
+from service_check import API_BASE_URL, explain_http_problem
+from theme import PALETTES, friendly_error, get_active_theme, inject_theme, nexus_card, page_intro, sidebar_brand
+
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000/api/v1")
+IS_REAL_DATA = False  # flip to True once the synthetic dataset is replaced
+
+st.set_page_config(page_title="Report Export - NEXUS", page_icon=None, layout="wide")
+inject_theme()
+sidebar_brand()
+require_backend()
+t = PALETTES[get_active_theme()]
+
+st.markdown(
+    """
+    <div class="nexus-eyebrow">Research Reports</div>
+    <h1 style="margin-top:4px;">Download a report</h1>
+    """,
+    unsafe_allow_html=True,
+)
+page_intro(
+    "Turns your latest prediction into a designed PDF with the verdict, release curve, inputs, reliability "
+    "check, related published papers with DOIs, and limitations.",
+    "Need to change something? Go back to 'Release Predictor', run it again, then return here.",
+)
+
+payload = st.session_state.get("last_prediction")
+result = st.session_state.get("last_result")
+if not payload or not result:
+    nexus_card(
+        """<div class="nexus-eyebrow">No prediction yet</div>
+        <p>Run a prediction first, then come back to download its report.</p>"""
+    )
+    if st.button("Go to Release Predictor", key="to_predictor", width="stretch"):
+        st.switch_page("pages/1_Release_Predictor.py")
+    st.stop()
+
+f = payload["formulation"]
+nutrient = NUTRIENT_NAMES.get(f["nutrient_type"], f["nutrient_type"])
+query = f"{f['coating_material']} {nutrient} controlled release fertilizer"
+
+# Fetch the literature once per query and keep it in session, so reruns do not repeat the search.
+if st.session_state.get("related_query") != query:
+    related, problem = [], None
+    try:
+        with st.spinner("Searching published literature for this formulation..."):
+            resp = httpx.get(f"{API_BASE_URL}/literature", params={"q": query, "limit": 6}, timeout=150)
+        if resp.status_code == 200:
+            related = resp.json()
+        else:
+            problem, _ = explain_http_problem(resp)
+    except httpx.HTTPError:
+        problem = "the prediction server could not be reached"
+    st.session_state.update(related_query=query, related=related, related_problem=problem)
+
+related = st.session_state.get("related", [])
+problem = st.session_state.get("related_problem")
+
+nexus_card(
+    f"""<div class="nexus-eyebrow">Your latest prediction</div>
+    <div style="font-weight:700; font-size:1.1rem;">{f['coating_material'].capitalize()}-coated {nutrient}
+    nano-fertilizer, {f['particle_size_nm']:g} nm</div>
+    <p style="color:{t['text_secondary']}; font-size:0.9rem; margin-top:6px;">
+    Soil pH {payload['soil']['ph']:g}, {payload['soil']['texture']} texture,
+    {payload['soil']['temperature_c']:g} °C. Literature search: “{query}”, {len(related)} papers found.</p>"""
+)
+
+if problem:
+    friendly_error(
+        what="Related papers could not be added to the report.",
+        why=problem,
+        next_step="The report will still include the verdict, data and source studies. Try again later for the related papers.",
+    )
+
+try:
+    pdf_bytes = build_pdf(payload, result, IS_REAL_DATA, related)
+except Exception:
+    friendly_error(
+        what="The report could not be built.",
+        why="Something in the prediction data was not in the expected format.",
+        next_step="Run the prediction again from 'Release Predictor', then come back here.",
+    )
+    st.stop()
+
+st.download_button(
+    "Download PDF report",
+    data=pdf_bytes,
+    file_name=f"nexus_report_{datetime.now():%Y%m%d_%H%M}.pdf",
+    mime="application/pdf",
+    key="download_pdf",
+    type="primary",
+)
+st.caption("The PDF states that predictions are not a substitute for experimental validation"
+           + ("" if IS_REAL_DATA else ", and that this prototype runs on synthetic data") + ".")

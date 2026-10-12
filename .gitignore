@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.joblib
+data/processed/*.csv
+!data/processed/.gitkeep
+.streamlit/
+.pytest_cache/
+*.egg-info/
+.DS_Store

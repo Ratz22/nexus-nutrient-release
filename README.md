@@ -1,146 +1,113 @@
-# ML-NanoFertRelease
+# NEXUS: Nutrient Release Intelligence (ML-NanoFertRelease)
 
-Interpretable ML platform to predict nano-fertilizer nutrient release —
-capstone research paper + deployable MVP, one codebase.
+A computational framework for estimating how fast a nano-fertilizer releases its nutrient, built from published release data. The system has a FastAPI backend, a Streamlit frontend, and a benchmark of several regression models compared against a non-ML baseline.
 
-## Architecture
+> **Status: research prototype. Not validated for publication yet.**
+> The current model metrics were produced with random cross-validation, not grouped by source paper, so they can be inflated by leakage. See [Known issues](#known-issues).
 
-```
-                    ┌─────────────────────────┐
-                    │   Streamlit frontend     │
-                    │  (5 pages, simple UX)    │
-                    └───────────┬─────────────┘
-                                │ REST (httpx)
-                    ┌───────────▼─────────────┐
-                    │      FastAPI backend      │
-                    │  /predict  /explain        │
-                    │  /soil  /weather  /literature
-                    │  /dataset/schema  /leaderboard
-                    └───┬───────────┬──────────┘
-                        │           │
-            ┌───────────▼──┐   ┌────▼─────────────────┐
-            │ ML pipeline   │   │  External global APIs │
-            │ (sklearn +    │   │  SoilGrids (ISRIC)     │
-            │  XGB/LGBM/    │   │  NASA POWER            │
-            │  CatBoost +   │   │  Semantic Scholar       │
-            │  SHAP)        │   └────────────────────────┘
-            └───────────────┘
-```
+## Project layout
 
-Why this stack: FastAPI + Streamlit is the fastest path to a *working,
-deployed* research tool in a week, without sacrificing rigor — the API
-is fully decoupled, so you (or a future teammate) can swap the frontend
-for React/Next.js later with zero backend changes.
-
-## What makes this "not just another fertilizer-prediction script"
-
-1. **Train/serve consistency by construction** — `preprocessing.py` is
-   the single source of truth for features; training and inference both
-   import it, so they can never silently drift apart.
-2. **Real global data, not manual entry** — `/soil` and `/weather`
-   auto-fill formulation forms from any lat/lon via ISRIC SoilGrids and
-   NASA POWER (both free, keyless, planet-wide).
-3. **Research tool, not just a calculator** — `/literature` gives live
-   Semantic Scholar search inside the app, so it doubles as a lit-review
-   aid while you write the paper.
-4. **Explainability is a first-class endpoint**, not an afterthought —
-   `/explain` returns SHAP values with a precomputed background sample so
-   it's fast enough for interactive use.
-5. **Runnable on day 1** — `generate_synthetic_dataset.py` produces a
-   physically-plausible dataset so the *entire* pipeline (train → SHAP →
-   API → frontend) works before your literature-mined dataset exists.
-   Swap the CSV later; nothing else changes.
-
-## Quickstart (local, no Docker)
-
-```bash
-# from the repo root
-pip install -r backend/requirements.txt --break-system-packages
-pip install -r frontend/requirements.txt --break-system-packages
-
-# 1. generate a placeholder dataset (skip once you have the real one)
-PYTHONPATH=backend python -m app.ml.generate_synthetic_dataset --n 800
-
-# 2. train + benchmark all 6 models, save the best + its SHAP explainer
-PYTHONPATH=backend python -m app.ml.train
-
-# 3. run the API
-uvicorn app.main:app --app-dir backend --reload --port 8000
-
-# 4. in a second terminal, run the frontend
-cd frontend && streamlit run app.py
-```
-
-Visit `http://localhost:8501`. API docs (auto-generated) at
-`http://localhost:8000/docs`.
-
-## Quickstart (Docker)
-
-```bash
-docker compose up --build
-```
-
-Backend: `localhost:8000` · Frontend: `localhost:8501`.
-Run training once inside the backend container the first time:
-```bash
-docker compose exec backend python -m app.ml.generate_synthetic_dataset --n 800
-docker compose exec backend python -m app.ml.train
-```
-
-## Repo layout
-
-```
 backend/
   app/
-    core/config.py          # env-driven settings
-    schemas/formulation.py  # API contract = dataset schema
-    ml/
-      preprocessing.py      # shared feature contract (train + serve)
-      models.py             # 6-model registry (Linear/RF/SVR/XGB/LGBM/CatBoost)
-      train.py              # benchmark + save best model + SHAP explainer
-      predict.py            # inference + release-curve generation
-      shap_explain.py       # SHAP explanation endpoint logic
-      generate_synthetic_dataset.py
-    services/
-      soilgrids.py          # global soil data (ISRIC)
-      nasa_power.py         # global weather data (NASA)
-      semantic_scholar.py   # literature search
-    api/v1/endpoints/       # predict, explain, external, dataset
-    main.py                 # FastAPI app
-  tests/
+    main.py              FastAPI app
+    api/v1/              API routes (predict, explain, dataset, external, fit)
+    core/config.py       settings (paths, API prefix)
+    ml/                  training, models, preprocessing, prediction, OOD check, SHAP
+    services/            SoilGrids, NASA POWER, literature lookup
+    schemas/             request/response models
+  tests/                 pytest suite
 frontend/
-  app.py                    # landing page
-  pages/
-    1_Release_Predictor.py
-    2_Explainability.py
-    3_Model_Benchmark.py
-    4_Research_Explorer.py
-    5_Report_Export.py
+  Home.py                Streamlit entry point
+  pages/                 Release Predictor, Explainability, Model Benchmark,
+                         Research Explorer, Report Export, Synthetic Dataset, Fit My Data
 data/
-  raw/                      # drop literature-extracted CSVs here
-  processed/dataset.csv     # final training data (schema in ml/preprocessing.py)
-models/                     # trained pipeline + SHAP explainer + metrics.json (generated)
+  processed/dataset.csv  training dataset (400 rows)
+  raw/                   literature template and source files
+models/                  trained model, SHAP explainer, metrics.json
+nexus_benchmark_results/ earlier benchmark outputs (provenance under review)
 ```
 
-## One-week build plan
+## Setup
 
-| Day | Focus | Deliverable |
-|---|---|---|
-| 1 | Repo up, synthetic pipeline runs end-to-end | You are here — everything above already works |
-| 2 | Literature dataset extraction (Sprint 6 of your matrix) | `data/processed/dataset.csv` replaces the synthetic one |
-| 3 | Retrain on real data, inspect SHAP, tune hyperparameters | Real `metrics.json`, chosen best model |
-| 4 | Polish frontend UX — units, tooltips, input validation ranges from literature | Demo-ready predictor + explainability pages |
-| 5 | Report export polish + literature explorer tuned to your keywords | Full MVP feature-complete |
-| 6 | Deploy (Render/Railway for backend, Streamlit Community Cloud for frontend) | Public URL you can put in the paper/demo |
-| 7 | Write up Methods + Results sections straight from `metrics.json` and SHAP plots | Paper draft sections done |
+From the project root, in PowerShell:
 
-## Extending
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r backend\requirements.txt
+pip install -r frontend\requirements.txt
+```
 
-- **Swap in a real feature (e.g. cation exchange capacity)**: add it to
-  `FormulationInput`/`SoilInput` in `schemas/formulation.py` **and**
-  `FEATURE_COLUMNS` in `ml/preprocessing.py` — that's the only place
-  the contract lives.
-- **Add a 7th model**: one line in `ml/models.py`'s registry.
-- **Batch prediction from CSV**: add an endpoint that loops
-  `predict_release()` over uploaded rows — the function already accepts
-  plain dicts, no refactor needed.
+## Run
+
+Start the backend from the `backend` folder. Launching from the project root breaks the `app.` imports.
+
+```powershell
+cd backend
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+```
+
+API docs: http://127.0.0.1:8000/docs
+
+In a second terminal, start the frontend:
+
+```powershell
+cd frontend
+streamlit run Home.py
+```
+
+The app opens at http://localhost:8501. If a page says the backend is unreachable, the backend isn't running on port 8000.
+
+## Train the model
+
+From the `backend` folder:
+
+```powershell
+python -m app.ml.train --data ..\data\processed\dataset.csv --skip-tuning
+```
+
+This writes `models/release_predictor_v1.joblib`, `shap_explainer.joblib`, `metrics.json`, `best_params.json`, and `feature_coverage.json`. Without `--skip-tuning`, Optuna tunes the tree-based models, which is slower.
+
+Check a dataset before training:
+
+```powershell
+python -m app.ml.validate_dataset --data ..\data\processed\dataset.csv
+```
+
+## Tests
+
+```powershell
+cd backend
+pytest -q
+```
+
+## Methods in brief
+
+- **Target:** `release_constant_k`, the first-order release rate.
+- **Features:** 13 formulation, soil, and environment inputs (see `backend/app/ml/preprocessing.py`).
+- **Models compared:** linear regression, random forest, SVR, XGBoost, LightGBM, CatBoost.
+- **Baseline:** bucket-mean lookup by coating material and soil texture. This is the non-ML number a model has to beat.
+- **Validation:** intended to be grouped by source paper (`paper_id`) using GroupKFold, so no paper appears in both training and test folds. Falls back to random KFold when there are fewer than 5 distinct papers. The training script prints a warning when this happens.
+- **Uncertainty:** the 90th percentile of absolute held-out residuals, stored as `residual_p90_abs`. This is a rough interval, not a calibrated one.
+- **Explainability:** SHAP values for the saved model.
+
+## Known issues
+
+1. **Validation is not grouped by paper in the current results.** The training run printed `random KFold, NOT grouped by paper`, so `models/metrics.json` must not be cited as results. Fixing this needs at least 5 distinct `paper_id` values in `dataset.csv`.
+2. **Hyperparameters are untuned in the current results.** `models/best_params.json` is empty, so the tree models ran with default settings.
+3. **Dataset provenance is incomplete.** Not every row's `doi` has been checked against its source paper.
+4. **`nexus_benchmark_results/` has no traceable source script.** Its model names don't match `models.py`, and `synthetic_benchmark.py` wasn't found. Don't cite these results until their origin is confirmed.
+5. **The `dataset` page needs the `/dataset/info` and `/dataset/raw` routes** to load. See `backend/app/api/v1/endpoints/dataset_export.py`.
+
+## Not part of the deployed system
+
+- `nexus-web/` is a separate React prototype. The Streamlit frontend is the supported UI.
+- `fetch_datasets.py` downloads candidate source files. Its outputs are not used for training until they've been checked and added to `data/processed/dataset.csv`.
+
+## Disclaimer
+
+Predictions are research estimates from published laboratory data. They are not agronomic, regulatory, or safety advice. Validate in your own conditions before any field or commercial use. See `DISCLAIMER.md`.
+
+## License
+
+Not yet chosen. See `LICENSE` once it's finalized.

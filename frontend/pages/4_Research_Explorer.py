@@ -2,9 +2,12 @@ import html
 
 import httpx
 import streamlit as st
+import json
+from pathlib import Path
 
+import pandas as pd
 from report_pdf import VERIFIED_SOURCES
-from service_check import require_backend
+
 from service_check import API_BASE_URL, connection_problem, explain_http_problem
 from theme import PALETTES, friendly_error, get_active_theme, inject_theme, nexus_card, page_intro, sidebar_brand
 
@@ -116,3 +119,242 @@ else:
         )
     for p in papers:
         _card(p, badge=p.get("source") or "Live")
+
+
+# ── NEXUS Experimental Data Explorer ──────────────────────────
+st.divider()
+st.markdown("## Experimental Data Explorer")
+st.caption(
+    "Exploration of published nutrient-release measurements. "
+    "These results are separate from the synthetic-data ML predictor."
+)
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+RESEARCH_DIR = PROJECT_ROOT / "data" / "research"
+
+observations_path = RESEARCH_DIR / "combined_real_release_observations.csv"
+fits_path = RESEARCH_DIR / "combined_exploratory_kinetic_fits.csv"
+audit_path = RESEARCH_DIR / "combined_dataset_audit.json"
+
+if not observations_path.exists() or not fits_path.exists():
+    st.warning(
+        "Research files were not found in data/research. "
+        "Copy the published-data CSV files into that folder."
+    )
+else:
+    try:
+        observations = pd.read_csv(observations_path)
+        fits = pd.read_csv(fits_path)
+
+        # Standardize the fields used in the interface.
+        required = {
+            "paper_id",
+            "days_after_fertilization",
+            "nitrogen_released_pct",
+            "fertilizer_type",
+        }
+        missing = required - set(observations.columns)
+
+        if missing:
+            st.error(f"Observation file is missing columns: {sorted(missing)}")
+        else:
+            observations["days_after_fertilization"] = pd.to_numeric(
+                observations["days_after_fertilization"], errors="coerce"
+            )
+            observations["nitrogen_released_pct"] = pd.to_numeric(
+                observations["nitrogen_released_pct"], errors="coerce"
+            )
+            observations = observations.dropna(
+                subset=["days_after_fertilization", "nitrogen_released_pct"]
+            )
+
+            # Summary statistics describe the available observations,
+            # not independent model-validation performance.
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Published observations", f"{len(observations):,}")
+            m2.metric("Source studies", observations["paper_id"].nunique())
+            m3.metric("Fertilizer labels", observations["fertilizer_type"].nunique())
+
+            if audit_path.exists():
+                with st.expander("Data provenance and limitations"):
+                    with open(audit_path, encoding="utf-8") as f:
+                        audit = json.load(f)
+
+                    st.write(audit.get("purpose", ""))
+                    for source in audit.get("sources", []):
+                        st.markdown(
+                            f"- **{source.get('paper_id', 'Unknown DOI')}** — "
+                            f"{source.get('source', 'Source not specified')}: "
+                            f"{source.get('rows', '?')} rows"
+                        )
+
+                    st.markdown("**Limitations recorded in the audit**")
+                    for limitation in audit.get("critical_limitations", []):
+                        st.markdown(f"- {limitation}")
+
+            st.markdown("### Explore observed release")
+
+            paper_options = sorted(
+                observations["paper_id"].dropna().astype(str).unique()
+            )
+            selected_paper = st.selectbox(
+                "Source study (DOI)",
+                paper_options,
+                key="exp_paper",
+            )
+
+            paper_data = observations[
+                observations["paper_id"].astype(str) == selected_paper
+            ].copy()
+
+            fertilizer_options = sorted(
+                paper_data["fertilizer_type"].dropna().astype(str).unique()
+            )
+            selected_fertilizer = st.selectbox(
+                "Fertilizer formulation",
+                fertilizer_options,
+                key="exp_fertilizer",
+            )
+
+            curve_data = paper_data[
+                paper_data["fertilizer_type"].astype(str) == selected_fertilizer
+            ].copy()
+
+            # Narrow to one experimental condition where these fields exist.
+            condition_columns = [
+                "experiment_id",
+                "temperature_condition",
+                "placement",
+                "position_detail",
+                "moisture_treatment",
+            ]
+            available_conditions = [
+                c for c in condition_columns if c in curve_data.columns
+            ]
+
+            for col in available_conditions:
+                values = sorted(
+                    curve_data[col].fillna("Not specified").astype(str).unique()
+                )
+                if len(values) > 1:
+                    selected_value = st.selectbox(
+                        col.replace("_", " ").title(),
+                        values,
+                        key=f"exp_{col}",
+                    )
+                    curve_data = curve_data[
+                        curve_data[col].fillna("Not specified").astype(str)
+                        == selected_value
+                    ]
+
+            if curve_data.empty:
+                st.info("No observations match this selection.")
+            else:
+                # Multiple replicate observations at the same time are
+                # shown as a mean; raw rows remain in the CSV.
+                plotted = (
+                    curve_data.groupby("days_after_fertilization", as_index=False)
+                    ["nitrogen_released_pct"]
+                    .agg(["mean", "count"])
+                    .reset_index()
+                )
+
+                plotted.columns = [
+                    "days_after_fertilization",
+                    "mean_release_pct",
+                    "observation_count",
+                ]
+                plotted = plotted.sort_values("days_after_fertilization")
+
+                st.line_chart(
+                    plotted.set_index("days_after_fertilization")[
+                        ["mean_release_pct"]
+                    ],
+                    y_label="Nitrogen released (%)",
+                    x_label="Days after fertilization",
+                )
+
+                st.caption(
+                    "The line shows the mean of available observations at each time "
+                    "point for the selected conditions. It is not an ML prediction."
+                )
+
+                with st.expander("View plotted observations"):
+                    st.dataframe(plotted, use_container_width=True)
+
+                with st.expander("View source records"):
+                    display_columns = [
+                        c for c in [
+                            "paper_id",
+                            "source_doi",
+                            "experiment_id",
+                            "fertilizer_type",
+                            "days_after_fertilization",
+                            "nitrogen_released_pct",
+                            "temperature_condition",
+                            "placement",
+                            "replicate_id",
+                            "source_note",
+                        ] if c in curve_data.columns
+                    ]
+                    st.dataframe(
+                        curve_data[display_columns],
+                        use_container_width=True,
+                    )
+
+            st.markdown("### Kinetic model comparison")
+            st.caption(
+                "Exploratory fits to observed curves. Fit statistics are not "
+                "prediction scores on unseen experiments."
+            )
+
+            if "fit_status" in fits.columns:
+                successful_fits = fits[
+                    fits["fit_status"].astype(str).str.lower().eq("success")
+                ].copy()
+            else:
+                successful_fits = fits.copy()
+
+            metric_columns = [
+                "paper_id",
+                "fertilizer_type",
+                "model",
+                "n_timepoints",
+                "r2_curve_fit",
+                "rmse_pct_points",
+                "mae_pct_points",
+                "aic",
+                "interpretation",
+            ]
+            metric_columns = [
+                c for c in metric_columns if c in successful_fits.columns
+            ]
+
+            if metric_columns:
+                if "paper_id" in successful_fits.columns:
+                    successful_fits = successful_fits[
+                        successful_fits["paper_id"].astype(str) == selected_paper
+                    ]
+                if "fertilizer_type" in successful_fits.columns:
+                    successful_fits = successful_fits[
+                        successful_fits["fertilizer_type"].astype(str)
+                        == selected_fertilizer
+                    ]
+
+                st.dataframe(
+                    successful_fits[metric_columns],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+                st.download_button(
+                    "Download filtered fit results (CSV)",
+                    data=successful_fits[metric_columns].to_csv(index=False),
+                    file_name="nexus_filtered_kinetic_fits.csv",
+                    mime="text/csv",
+                )
+            else:
+                st.info("No recognized kinetic-fit metric columns were found.")
+
+    except (OSError, ValueError, KeyError, pd.errors.ParserError) as exc:
+        st.error(f"Could not load the experimental research data: {exc}")

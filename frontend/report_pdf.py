@@ -121,7 +121,7 @@ def _decorate(canvas, doc, first: bool, note: str):
         canvas.line(20 * mm, h - 13 * mm, w - 20 * mm, h - 13 * mm)
         canvas.setFillColor(MUTED)
         canvas.setFont("Helvetica", 7.5)
-        canvas.drawString(20 * mm, h - 10 * mm, "NEXUS  |  Simulation report")
+        canvas.drawString(20 * mm, h - 10 * mm, "NEXUS  |  Prototype prediction report")
     canvas.setFillColor(MUTED)
     canvas.setFont("Helvetica", 7)
     canvas.drawString(20 * mm, 12 * mm, _c(note))
@@ -284,10 +284,10 @@ def build_pdf(payload: dict, result: dict, is_real_data: bool = False, related: 
     doc = SimpleDocTemplate(
         buf, pagesize=A4, leftMargin=20 * mm, rightMargin=20 * mm,
         topMargin=24 * mm, bottomMargin=20 * mm,
-        title="NEXUS simulation report", author="NEXUS",
+        title="NEXUS prototype prediction report", author="NEXUS",
     )
     story = [
-        _p("SIMULATION REPORT", s["kicker"]),
+        _p("PROTOTYPE PREDICTION REPORT", s["kicker"]),
         _p(f"{f['coating_material'].capitalize()}-coated {nutrient} nano-fertilizer, "
            f"{f['particle_size_nm']:g} nm", s["title"]),
         _p(f"Generated {datetime.now():%d %B %Y, %H:%M}   |   Model: "

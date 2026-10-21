@@ -1,30 +1,37 @@
-"""
-Central config. Everything env-driven so the same code runs locally,
-in Docker, and on any cloud host without edits.
-"""
 from functools import lru_cache
+from pathlib import Path
+
 from pydantic_settings import BaseSettings
+
+# Project root = the folder that contains backend/, models/, data/
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "ML-NanoFertRelease"
     API_V1_PREFIX: str = "/api/v1"
 
-    # CORS — "global access" means any frontend origin can call this API.
-    # Lock this down to your real frontend domain(s) before going public.
+    # Local development: the Streamlit frontend runs on another port, so CORS must allow it.
+    # Before any public deployment, replace this with your real frontend domain.
     CORS_ORIGINS: list[str] = ["*"]
 
-    # Model artifacts
-    MODEL_DIR: str = "models"
+    # Absolute paths, so the server finds files no matter which folder you start it from.
+    MODEL_DIR: str = str(PROJECT_ROOT / "models")
     ACTIVE_MODEL_NAME: str = "release_predictor_v1.joblib"
 
-    # External APIs (all free-tier / no-key-required by default)
+    DATASET_PATH: str = str(PROJECT_ROOT / "data" / "processed" / "dataset.csv")
+
     SOILGRIDS_BASE_URL: str = "https://rest.isric.org/soilgrids/v2.0/properties/query"
     NASA_POWER_BASE_URL: str = "https://power.larc.nasa.gov/api/temporal/climatology/point"
-    SEMANTIC_SCHOLAR_BASE_URL: str = "https://api.semanticscholar.org/graph/v1/paper/search"
+    OPENALEX_BASE_URL: str = "https://api.openalex.org/works"
+    CROSSREF_BASE_URL: str = "https://api.crossref.org/works"
 
-    # Optional: only needed if you add higher-rate-limit literature search
-    SEMANTIC_SCHOLAR_API_KEY: str | None = None
+    # Optional. OpenAlex and Crossref give identified clients a more reliable service.
+    # Add to a .env file as:  CONTACT_EMAIL=you@university.edu
+    CONTACT_EMAIL: str | None = None
+
+    HTTP_TIMEOUT_S: float = 30.0
+    HTTP_RETRIES: int = 1
 
     class Config:
         env_file = ".env"

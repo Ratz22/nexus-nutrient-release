@@ -1,0 +1,518 @@
+paper_id,experiment_id,fertilizer_type,temperature_condition,placement,position_detail,moisture_treatment,days_after_fertilization,n_observations,mean_release_pct,sd_release_pct
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,1,1,18.37,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,3,1,21.26,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,5,1,23.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,7,1,25.37,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,10,1,26.64,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,14,1,28.65,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,21,1,29.97,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,28,1,31.56,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,42,1,33.04,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,56,1,34.04,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,70,1,34.64,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,84,1,35.23,
+10.1039/D3EN00721A,Supplementary Table S4,UF,,,,,98,1,35.72,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,1,1,17.02,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,3,1,20.63,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,5,1,23.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,7,1,25.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,10,1,26.96,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,14,1,29.35,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,21,1,31.53,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,28,1,33.63,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,42,1,35.65,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,56,1,36.86,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,70,1,37.65,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,84,1,38.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.06,,,,,98,1,38.65,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,1,1,15.62,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,3,1,19.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,5,1,22.96,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,7,1,24.68,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,10,1,27.07,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,14,1,30.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,21,1,32.95,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,28,1,35.7,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,42,1,38.7,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,56,1,40.15,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,70,1,41.52,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,84,1,42.36,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.12,,,,,98,1,43.23,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,1,1,14.62,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,3,1,18.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,5,1,22.3,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,7,1,25.3,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,10,1,27.22,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,14,1,30.3,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,21,1,34.28,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,28,1,37.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,42,1,40.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,56,1,43.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,70,1,45.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,84,1,47.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.18,,,,,98,1,49.85,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,1,1,12.55,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,3,1,17.0,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,5,1,21.77,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,7,1,24.99,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,10,1,27.61,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,14,1,30.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,21,1,35.6,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,28,1,38.6,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,42,1,42.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,56,1,47.85,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,70,1,51.52,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,84,1,54.58,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.24,,,,,98,1,56.95,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,1,1,9.49,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,3,1,15.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,5,1,20.56,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,7,1,24.25,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,10,1,27.27,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,14,1,31.06,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,21,1,36.6,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,28,1,40.45,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,42,1,47.69,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,56,1,56.66,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,70,1,62.86,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,84,1,67.25,
+10.1039/D3EN00721A,Supplementary Table S4,UF/MKP-0.48,,,,,98,1,70.62,
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,7,3,81.66666666666667,2.0816659994661335
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,14,3,89.33333333333333,11.015141094572206
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,21,3,89.66666666666667,5.507570547286102
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,28,3,93.33333333333333,6.506407098647712
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,35,3,96.66666666666667,4.163331998932267
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,42,3,98.0,3.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,49,3,101.33333333333333,0.5773502691896247
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Incorporated,Middle,,56,2,100.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Surface,,7,3,84.66666666666667,9.01849950564579
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Surface,,21,3,92.66666666666667,7.7674534651540315
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Surface,,28,3,99.66666666666667,0.5773502691896247
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Surface,,35,4,100.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Thatch,,7,3,79.33333333333333,10.214368964029708
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Thatch,,14,1,74.0,
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Thatch,,21,3,90.66666666666667,5.033222956847167
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Thatch,,28,2,97.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Fluctuating,Surface,Thatch,,35,3,99.0,2.6457513110645907
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,7,3,84.33333333333333,2.309401076758502
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,14,3,84.33333333333333,0.5773502691896247
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,21,2,92.5,2.1213203435596424
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,28,3,94.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,35,3,93.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,42,3,98.0,3.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,49,3,100.33333333333333,1.1547005383792495
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Incorporated,Middle,,56,3,98.33333333333333,2.309401076758502
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,7,3,72.0,4.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,14,3,65.0,3.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,21,3,71.0,7.937253933193772
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,28,3,79.66666666666667,8.082903768654763
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,35,3,86.0,9.643650760992955
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,42,3,91.0,7.0
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,49,3,93.33333333333333,6.658328118479392
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Surface,,56,3,90.33333333333333,5.773502691896256
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,7,3,63.333333333333336,9.291573243177568
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,14,3,68.0,9.539392014169456
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,21,3,75.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,28,3,76.66666666666667,8.621678104251709
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,35,3,92.33333333333333,6.429100507328634
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,42,3,93.0,8.54400374531753
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,49,2,94.0,9.899494936611665
+10.1371/journal.pone.0234544,Experiment 1,PCSCU,Static,Surface,Thatch,,56,3,92.66666666666667,2.88675134594813
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,7,1,18.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,14,3,27.666666666666668,15.30795000427338
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,21,3,7.333333333333333,7.023769168568492
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,28,3,24.666666666666668,23.86070689089771
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,35,3,31.666666666666668,5.033222956847167
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,42,3,35.0,10.816653826391969
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,49,3,37.333333333333336,11.676186592091328
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,56,1,21.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,63,3,36.0,12.12435565298214
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,70,3,64.0,8.717797887081348
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,77,3,62.666666666666664,11.015141094572204
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,84,3,63.0,17.349351572897472
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,91,3,73.66666666666667,6.429100507328638
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,98,3,85.33333333333333,4.932882862316246
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,105,2,82.5,6.363961030678928
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Incorporated,Middle,,112,3,78.66666666666667,12.858201014657272
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Surface,,7,3,46.0,6.244997998398398
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Surface,,14,1,19.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Surface,,21,3,29.666666666666668,5.507570547286103
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Surface,,28,3,78.0,9.16515138991168
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Surface,,35,3,81.66666666666667,11.846237095944574
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Thatch,,7,3,70.33333333333333,21.77919496522618
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Thatch,,21,3,76.0,17.05872210923198
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Thatch,,28,3,85.33333333333333,13.613718571108093
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Fluctuating,Surface,Thatch,,35,3,80.0,10.583005244258363
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,7,3,19.666666666666668,7.767453465154029
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,14,3,25.333333333333332,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,21,3,30.333333333333332,7.3711147958319945
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,28,1,15.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,35,3,48.666666666666664,11.676186592091332
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,42,3,26.666666666666668,12.897028081435403
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,49,3,24.333333333333332,8.504900548115382
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,56,2,16.0,2.8284271247461903
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,63,3,32.666666666666664,7.505553499465135
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,70,3,52.333333333333336,27.209067116190024
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,77,2,30.0,12.727922061357855
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,84,3,23.666666666666668,3.511884584284246
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,91,3,20.333333333333332,5.773502691896257
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,98,3,30.0,13.228756555322953
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,105,3,34.333333333333336,11.71893055416463
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,112,2,29.0,12.727922061357855
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,119,3,32.666666666666664,12.897028081435401
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Incorporated,Middle,,126,3,34.333333333333336,6.429100507328638
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,7,3,13.666666666666666,8.082903768654761
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,14,3,27.333333333333332,10.016652800877813
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,21,3,20.0,3.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,28,2,21.0,11.313708498984761
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,35,2,31.5,3.5355339059327378
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,42,3,14.333333333333334,0.5773502691896258
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,49,3,19.0,4.58257569495584
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,56,3,27.333333333333332,15.947831618540913
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,63,3,29.666666666666668,10.692676621563626
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,70,3,14.0,12.529964086141668
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,77,3,6.333333333333333,6.506407098647712
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,84,2,3.5,3.5355339059327378
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,91,3,5.0,4.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,98,3,17.666666666666668,9.451631252505216
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,105,3,23.0,9.848857801796104
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,112,3,11.333333333333334,1.5275252316519465
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,119,3,39.0,14.106735979665885
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Surface,,126,3,42.333333333333336,13.316656236958787
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,7,2,30.0,8.48528137423857
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,14,3,22.0,8.660254037844387
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,21,3,18.333333333333332,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,28,4,29.5,12.449899597988733
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,35,3,35.666666666666664,6.429100507328636
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,42,3,26.666666666666668,15.631165450257807
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,49,3,24.666666666666668,10.016652800877813
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,56,3,19.333333333333332,10.503967504392486
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,63,3,26.666666666666668,14.224392195567914
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,70,3,23.333333333333332,5.686240703077327
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,77,3,25.0,15.620499351813308
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,84,3,32.0,20.42057785666214
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,91,3,24.333333333333332,15.307950004273378
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,98,3,11.333333333333334,4.041451884327381
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,105,1,57.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,112,3,27.666666666666668,25.967928938083094
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,119,3,39.666666666666664,2.0816659994661335
+10.1371/journal.pone.0234544,Experiment 1,PCU 120,Static,Surface,Thatch,,126,3,44.333333333333336,2.0816659994661326
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,7,3,14.0,8.717797887081348
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,14,3,22.333333333333332,6.027713773341709
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,21,3,20.333333333333332,4.163331998932266
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,28,4,46.0,12.727922061357855
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,35,3,37.666666666666664,10.408329997330663
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,42,3,45.666666666666664,7.094598884597587
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,49,3,47.666666666666664,15.821925715074423
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,56,1,49.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,63,3,45.0,10.14889156509222
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,70,3,49.333333333333336,10.016652800877813
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,77,3,61.666666666666664,21.007935008784976
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,84,3,45.0,2.6457513110645907
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,91,3,76.0,9.848857801796104
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,98,3,71.0,5.196152422706632
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,105,3,75.0,12.529964086141668
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Incorporated,Middle,,112,3,84.0,4.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Surface,,7,3,25.0,6.082762530298219
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Surface,,14,1,53.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Surface,,21,3,69.0,15.716233645501712
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Surface,,28,3,70.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Surface,,35,3,80.0,17.320508075688775
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Thatch,,7,3,26.0,10.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Thatch,,21,3,46.0,20.42057785666214
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Thatch,,28,2,63.5,0.7071067811865476
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Fluctuating,Surface,Thatch,,35,2,88.0,9.899494936611665
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,7,3,19.333333333333332,7.023769168568493
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,14,3,20.333333333333332,6.6583281184793925
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,21,3,16.666666666666668,4.163331998932266
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,28,2,25.5,7.7781745930520225
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,35,3,26.0,2.6457513110645907
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,42,3,25.333333333333332,5.507570547286102
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,49,3,21.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,56,3,14.333333333333334,2.3094010767585034
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,63,3,24.333333333333332,2.5166114784235827
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,70,3,17.0,10.392304845413264
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,77,3,21.666666666666668,15.14375558880073
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,84,4,24.75,4.9916597106239795
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,91,2,30.5,17.67766952966369
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,98,3,29.666666666666668,7.767453465154029
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,105,2,19.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,112,3,19.333333333333332,3.0550504633038935
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,119,3,24.0,5.291502622129181
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,126,4,25.0,6.683312551921141
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,133,3,34.333333333333336,9.504384952922168
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,140,3,20.333333333333332,7.505553499465135
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,147,3,36.666666666666664,4.932882862316246
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,154,3,35.666666666666664,3.0550504633038944
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,161,3,31.333333333333332,3.785938897200182
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,168,3,32.0,9.539392014169456
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,175,2,29.5,2.1213203435596424
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Incorporated,Middle,,182,3,24.0,3.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,7,3,18.666666666666668,7.023769168568492
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,14,3,26.666666666666668,11.718930554164631
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,21,3,21.666666666666668,5.686240703077327
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,28,3,26.0,13.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,35,3,43.333333333333336,4.932882862316248
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,42,3,27.666666666666668,6.6583281184793925
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,49,2,18.5,3.5355339059327378
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,56,3,12.333333333333334,10.692676621563626
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,63,2,26.5,0.7071067811865476
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,70,3,25.666666666666668,35.3600527903075
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,77,3,12.333333333333334,1.1547005383792515
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,84,3,8.666666666666666,7.76745346515403
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,91,2,8.5,4.949747468305833
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,98,3,14.333333333333334,7.571877794400365
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,105,3,20.333333333333332,7.234178138070235
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,112,1,20.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,126,2,44.5,12.020815280171307
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,133,3,36.333333333333336,15.044378795195676
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,140,3,22.333333333333332,7.371114795831994
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,147,3,35.333333333333336,4.509249752822895
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,154,3,17.333333333333332,3.785938897200182
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,161,3,28.333333333333332,7.571877794400365
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,168,3,17.333333333333332,1.5275252316519463
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,175,2,31.0,2.8284271247461903
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Surface,,182,3,24.0,13.527749258468683
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,7,3,17.0,5.5677643628300215
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,14,4,22.0,4.08248290463863
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,21,3,20.666666666666668,12.583057392117917
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,28,3,38.666666666666664,15.567059238447492
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,35,2,37.0,18.384776310850235
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,42,3,29.666666666666668,15.275252316519467
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,49,3,17.333333333333332,6.110100926607786
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,56,3,19.333333333333332,5.686240703077327
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,63,3,19.333333333333332,2.081665999466132
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,70,3,10.0,17.320508075688775
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,77,3,8.333333333333334,8.504900548115383
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,84,3,15.666666666666666,6.110100926607787
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,91,2,15.5,4.949747468305833
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,98,3,13.333333333333334,5.507570547286102
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,112,3,21.0,7.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,119,3,38.333333333333336,10.969655114602888
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,126,2,24.0,5.656854249492381
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,133,3,46.333333333333336,7.3711147958319945
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,140,3,13.333333333333334,16.289055630494154
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,147,3,41.666666666666664,4.041451884327381
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,154,3,23.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,161,3,23.0,16.09347693943108
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,168,3,24.0,5.291502622129181
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,175,3,24.0,8.717797887081348
+10.1371/journal.pone.0234544,Experiment 1,PCU 180,Static,Surface,Thatch,,182,3,32.666666666666664,9.073771725877465
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,7,2,56.0,33.94112549695428
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,14,3,55.666666666666664,19.5021366350801
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,21,2,61.5,27.577164466275352
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,28,3,75.66666666666667,3.0550504633038935
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,35,3,50.0,2.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,42,3,66.66666666666667,9.29157324317757
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,49,3,66.0,10.535653752852738
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Incorporated,Middle,,56,1,84.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Surface,,7,3,44.666666666666664,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Surface,,21,3,65.0,8.18535277187245
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Surface,,28,3,74.66666666666667,17.7857620959388
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Surface,,35,3,93.66666666666667,7.094598884597586
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Thatch,,7,2,48.5,9.192388155425117
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Thatch,,21,3,76.0,12.165525060596439
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Thatch,,28,3,86.33333333333333,5.033222956847168
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Fluctuating,Surface,Thatch,,35,3,100.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,7,2,34.0,7.0710678118654755
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,14,2,54.5,20.506096654409877
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,21,2,34.5,12.020815280171307
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,28,3,29.666666666666668,12.055427546683415
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,35,3,31.0,16.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,42,3,55.0,2.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,49,3,60.666666666666664,14.011899704655802
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Incorporated,Middle,,56,3,52.666666666666664,4.041451884327381
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,7,3,9.333333333333334,6.8068592855540455
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,14,3,15.666666666666666,5.033222956847166
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,21,2,16.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,28,3,30.333333333333332,6.806859285554046
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,35,3,25.666666666666668,7.0945988845975885
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,42,2,23.0,4.242640687119285
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,49,3,25.666666666666668,7.234178138070234
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Surface,,56,3,41.0,14.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,7,3,17.0,10.583005244258363
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,14,3,33.0,9.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,21,3,22.333333333333332,13.279056191361391
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,28,3,26.0,7.810249675906654
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,35,2,35.5,14.849242404917497
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,42,3,32.666666666666664,4.72581562625261
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,49,3,32.666666666666664,16.289055630494154
+10.1371/journal.pone.0234544,Experiment 1,PCU 45,Static,Surface,Thatch,,56,3,35.333333333333336,14.571661996262929
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,7,3,27.666666666666668,10.263202878893768
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,14,3,21.0,13.114877048604
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,21,2,24.5,4.949747468305833
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,28,3,61.333333333333336,8.504900548115382
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,35,3,49.666666666666664,4.163331998932266
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,42,3,68.0,11.789826122551595
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,49,3,70.0,26.90724809414742
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,56,2,71.5,3.5355339059327378
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,63,3,76.33333333333333,2.886751345948127
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,70,3,68.33333333333333,16.502525059315417
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,77,3,70.33333333333333,10.503967504392486
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Incorporated,Middle,,84,3,86.33333333333333,1.5275252316519463
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Surface,,7,3,92.0,13.856406460551018
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Surface,,21,3,64.66666666666667,12.423096769056151
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Surface,,28,3,89.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Surface,,35,3,89.66666666666667,8.9628864398325
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Thatch,,7,3,42.666666666666664,11.71893055416463
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Thatch,,14,1,19.0,
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Thatch,,21,3,61.333333333333336,24.583192089989726
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Thatch,,28,3,56.0,37.04051835490427
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Fluctuating,Surface,Thatch,,35,3,89.66666666666667,8.9628864398325
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,7,3,30.0,10.816653826391969
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,14,3,15.333333333333334,7.234178138070234
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,21,3,21.666666666666668,7.637626158259733
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,28,3,13.666666666666666,3.5118845842842465
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,35,3,20.666666666666668,7.76745346515403
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,42,3,49.0,15.132745950421556
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,49,3,45.333333333333336,9.018499505645789
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,56,2,60.0,24.041630560342615
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,63,3,51.666666666666664,4.72581562625261
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,70,3,70.66666666666667,7.571877794400367
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,77,3,59.666666666666664,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Incorporated,Middle,,84,3,65.0,10.14889156509222
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,7,3,12.333333333333334,3.2145502536643185
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,14,2,13.5,7.7781745930520225
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,21,3,16.666666666666668,6.027713773341709
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,28,3,28.0,13.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,35,3,33.0,7.937253933193772
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,42,3,27.0,2.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,49,3,32.333333333333336,4.04145188432738
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,56,3,19.333333333333332,10.214368964029708
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,63,3,30.666666666666668,11.67618659209133
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,70,3,17.0,8.888194417315589
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,77,3,19.666666666666668,14.224392195567912
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Surface,,84,3,11.0,1.0
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,7,3,17.666666666666668,5.033222956847166
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,14,3,13.666666666666666,8.736894948054106
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,21,3,18.333333333333332,12.583057392117915
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,28,3,27.0,16.64331697709324
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,35,3,30.333333333333332,3.5118845842842457
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,42,3,29.666666666666668,0.5773502691896255
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,49,3,22.666666666666668,2.081665999466133
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,56,3,22.0,7.54983443527075
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,63,3,29.333333333333332,13.316656236958787
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,70,2,26.0,4.242640687119285
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,77,3,21.333333333333332,16.165807537309522
+10.1371/journal.pone.0234544,Experiment 1,PCU 75,Static,Surface,Thatch,,84,3,29.666666666666668,8.504900548115382
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,7,3,81.33333333333333,5.507570547286104
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,14,3,94.66666666666667,5.507570547286104
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,21,3,87.0,7.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,28,3,95.0,5.5677643628300215
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,35,3,94.0,7.937253933193772
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,42,3,96.33333333333333,5.033222956847168
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,49,2,98.0,2.8284271247461903
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,63,3,93.0,8.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Incorporated,Middle,,70,3,97.66666666666667,4.04145188432738
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Surface,,7,3,87.66666666666667,1.5275252316519452
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Surface,,14,1,94.0,
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Surface,,21,2,99.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Surface,,28,3,99.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Surface,,35,4,98.25,4.193248541803043
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Thatch,,7,3,92.33333333333333,2.516611478423582
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Thatch,,14,1,78.0,
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Thatch,,21,4,91.25,8.578072821638512
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Thatch,,28,3,98.33333333333333,2.88675134594813
+10.1371/journal.pone.0234544,Experiment 1,SCU,Fluctuating,Surface,Thatch,,35,3,100.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,7,3,86.0,2.6457513110645907
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,14,3,97.66666666666667,3.214550253664317
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,21,2,89.5,2.1213203435596424
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,28,2,94.5,0.7071067811865476
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,35,3,90.33333333333333,5.507570547286103
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,42,3,95.66666666666667,1.5275252316519452
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,49,4,98.25,4.645786621588783
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,56,3,94.33333333333333,4.509249752822894
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,63,3,96.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Incorporated,Middle,,70,3,91.66666666666667,7.637626158259734
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,7,3,80.33333333333333,11.150485789118486
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,14,3,94.0,5.5677643628300215
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,21,3,83.66666666666667,4.72581562625261
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,28,3,88.0,7.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,35,3,90.33333333333333,3.214550253664317
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,42,3,86.0,6.557438524302
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,49,3,98.33333333333333,4.72581562625261
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,56,3,93.66666666666667,6.806859285554047
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,63,3,96.33333333333333,1.5275252316519452
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Surface,,70,3,95.66666666666667,2.88675134594813
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,7,3,86.66666666666667,4.618802153517007
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,14,2,91.0,1.4142135623730951
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,21,3,88.0,6.082762530298219
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,28,3,93.0,1.7320508075688772
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,35,3,89.0,11.532562594670797
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,42,3,86.33333333333333,9.71253485622231
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,49,3,96.66666666666667,4.04145188432738
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,56,2,95.0,0.0
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,63,3,94.0,4.58257569495584
+10.1371/journal.pone.0234544,Experiment 1,SCU,Static,Surface,Thatch,,70,3,93.0,1.0
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,1.0,24,3,19.0,5.196152422706632
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,1.0,46,3,26.333333333333332,0.5773502691896255
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,1.0,75,3,26.666666666666668,2.5166114784235836
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,3.0,24,3,21.333333333333332,4.041451884327381
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,3.0,46,3,22.333333333333332,2.309401076758503
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Hanging bag,Hanging bag,3.0,75,3,25.333333333333332,5.507570547286102
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,1.0,24,3,27.0,7.211102550927978
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,1.0,46,3,38.333333333333336,12.096831541082704
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,1.0,75,3,69.33333333333333,4.618802153517007
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,3.0,24,3,25.0,7.0
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,3.0,46,3,41.0,11.135528725660043
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Incorporated,Incorporated,3.0,75,3,69.0,5.5677643628300215
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,1.0,24,3,67.66666666666667,8.621678104251709
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,1.0,46,3,87.0,4.58257569495584
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,1.0,75,3,92.66666666666667,5.859465277082314
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,3.0,24,3,69.33333333333333,8.082903768654761
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,3.0,46,3,89.33333333333333,1.5275252316519452
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Fluctuating,Surface,Surface,3.0,75,3,89.66666666666667,0.5773502691896278
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,1.0,24,3,10.333333333333334,2.081665999466133
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,1.0,46,3,11.333333333333334,1.5275252316519465
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,1.0,75,3,12.666666666666666,1.5275252316519468
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,3.0,24,3,10.333333333333334,0.5773502691896255
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,3.0,46,3,10.333333333333334,0.5773502691896255
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Hanging bag,Hanging bag,3.0,75,3,12.333333333333334,1.1547005383792515
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,1.0,24,3,29.0,6.082762530298219
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,1.0,46,3,33.666666666666664,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,1.0,75,3,47.0,7.0
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,3.0,24,3,40.666666666666664,5.773502691896258
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,3.0,46,3,28.333333333333332,4.163331998932265
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Incorporated,Incorporated,3.0,75,3,48.666666666666664,11.718930554164633
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,1.0,24,3,16.666666666666668,6.3508529610858835
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,1.0,46,3,19.666666666666668,4.725815626252608
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,1.0,75,3,28.0,4.58257569495584
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,3.0,24,3,18.333333333333332,4.509249752822894
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,3.0,46,3,24.666666666666668,4.618802153517007
+10.1371/journal.pone.0234544,Experiment 2,PCU 120,Static,Surface,Surface,3.0,75,3,27.333333333333332,5.507570547286103
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,1.0,24,3,21.333333333333332,2.081665999466133
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,1.0,46,3,23.333333333333332,5.859465277082316
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,1.0,75,3,27.333333333333332,2.309401076758503
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,3.0,24,3,16.333333333333332,4.163331998932266
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,3.0,46,3,26.333333333333332,2.886751345948129
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Hanging bag,Hanging bag,3.0,75,3,24.0,3.4641016151377544
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,1.0,24,3,51.666666666666664,10.066445913694334
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,1.0,46,3,65.66666666666667,5.5075705472861
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,1.0,75,3,86.66666666666667,8.504900548115385
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,3.0,24,3,54.0,8.54400374531753
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,3.0,46,3,63.666666666666664,10.016652800877814
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Incorporated,Incorporated,3.0,75,3,93.0,8.18535277187245
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,1.0,24,3,66.33333333333333,6.350852961085882
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,1.0,46,3,89.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,1.0,75,3,87.66666666666667,3.0550504633038935
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,3.0,24,3,58.333333333333336,4.932882862316246
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,3.0,46,3,89.33333333333333,4.725815626252606
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Fluctuating,Surface,Surface,3.0,75,3,87.33333333333333,2.081665999466134
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,1.0,24,3,11.0,1.0
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,1.0,46,3,11.333333333333334,1.1547005383792517
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,1.0,75,3,12.333333333333334,2.516611478423583
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,3.0,24,3,10.666666666666666,3.7859388972001824
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,3.0,46,3,12.666666666666666,0.5773502691896255
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Hanging bag,Hanging bag,3.0,75,3,10.666666666666666,0.5773502691896258
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,1.0,24,3,28.333333333333332,2.081665999466133
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,1.0,46,3,39.333333333333336,7.76745346515403
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,1.0,75,3,75.0,15.0996688705415
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,3.0,24,3,27.666666666666668,2.5166114784235836
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,3.0,46,3,36.333333333333336,11.930353445448855
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Incorporated,Incorporated,3.0,75,3,78.0,7.937253933193772
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,1.0,24,3,12.666666666666666,1.5275252316519468
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,1.0,46,3,21.666666666666668,4.932882862316248
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,1.0,75,3,21.0,3.605551275463989
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,3.0,24,3,15.333333333333334,3.055050463303893
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,3.0,46,3,26.333333333333332,0.5773502691896263
+10.1371/journal.pone.0234544,Experiment 2,PCU 75,Static,Surface,Surface,3.0,75,3,24.0,5.291502622129181

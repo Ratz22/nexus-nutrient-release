@@ -1,0 +1,38 @@
+{
+  "purpose": "Preliminary consolidation of two real published nutrient-release sources for NEXUS kinetic-model exploration.",
+  "sources": [
+    {
+      "paper_id": "10.1371/journal.pone.0234544",
+      "source": "PLOS ONE supplementary workbook",
+      "rows": 1254,
+      "notes": "Two experiments; workbook target column is nitrogen released (%) with outliers already removed by source authors."
+    },
+    {
+      "paper_id": "10.1039/D3EN00721A",
+      "source": "Environmental Science: Nano supplementary PDF, Table S4",
+      "rows": 78,
+      "notes": "78 values transcribed from 13 timepoints \u00d7 6 UF/MKP formulations; no replicate-level data shown in Table S4."
+    }
+  ],
+  "total_observations": 1332,
+  "unique_papers": 2,
+  "unique_formulations": 12,
+  "summary_curve_count": 42,
+  "kinetic_fit_records": 126,
+  "critical_limitations": [
+    "These are two studies, with different experimental designs and fertilizer families; preserve paper_id and experiment identifiers.",
+    "The UF/MKP supplementary table provides aggregate values without replicate-level uncertainty in Table S4.",
+    "Some measurements are extracted from a source workbook with outliers already removed by the source authors.",
+    "Curve-fit metrics describe fit to observed curves, not ML prediction on unseen studies.",
+    "The 13 NEXUS features and release_constant_k target are not all available in these sources; do not train the existing NEXUS model directly on this combined file.",
+    "Do not use the same curve/time observations in both training and test data when evaluating release-curve prediction."
+  ],
+  "files": [
+    "combined_real_release_observations.csv",
+    "combined_release_curve_summary.csv",
+    "combined_exploratory_kinetic_fits.csv",
+    "combined_dataset_audit.json",
+    "README_RESULTS.md",
+    "example_release_curves.png"
+  ]
+}
